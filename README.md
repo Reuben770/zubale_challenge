@@ -1,6 +1,4 @@
-# zubale_challenge
-
-## In this repo you cand find all the script, input and output related to the techincal challenge.
+## This repo you cand find all the script, input and output related to the techincal challenge.
 
 1- Clone this repo in diretory previuse createad
 
