@@ -12,7 +12,7 @@
     pip install freecurrencyapi
     pip install -r requirements.txt 
 ```
-3- Create .env and add all the variables requerired internaly
+3- Create .env and add all the variables required internally
 
     DATA_PATH_FILES_INPUT= # Path to the input directory where the raw data files are located
     DATA_PATH_FILES_OUTPUT= # Path to the output directory where the processed files will be saved
@@ -25,7 +25,7 @@
 
     The .env file must be in the challenge_01_02 directory
 
-4- Execute python challenge_analysis.py to get the results of the challenge 1, 2, 3. This challenge_analysis.py internaly has all the comments related what's is doing, step by step.
+4- Execute python challenge_analysis.py to get the results of the challenge 1, 2, 3. This challenge_analysis.py internally has all the comments related to what's is doing, step by step.
 
 ```bash
     cd challenge_01_02
@@ -45,10 +45,10 @@ In the ./data/output you will find 3 files:
     - fixed_order_full_information.csv
     - kpi_product_orders.csv
 
-Each file correspond to the challenge requeried.   
+Each file corresponds to the challenge required.   
 
-5- To execute challenge 3 you need to follow this steps, but there are some pre requirement you need to have done:
-  - valid postgress database
+5- To execute challenge 3 you need to follow these steps, but there are some pre requirement you need to have done:
+  - valid Postgres database
   - configure in the .env this variables properly
         POSTGRES_DB= # Name of the PostgreSQL database to connect to
         POSTGRES_USER= # Username for the PostgreSQL database
@@ -62,8 +62,9 @@ Each file correspond to the challenge requeried.
     bash load_data_and_analysis.sh
 ```
 
-After running this script you will see this result:
+After running this script, you will see this result:
 
+```bash
 psql:table_script_creation.sql:6: NOTICE:  relation "orders" already exists, skipping
 CREATE TABLE
 psql:table_script_creation.sql:9: NOTICE:  relation "idx_orders_product_id" already exists, skipping
@@ -91,12 +92,16 @@ COPY 50
  Pants    |             29 |         1720.44 |          11
 (3 rows)
 
-If the table existe previusly you will see a warning about the creation table must be skipped.
+```
 
+If the table exist previously, you will see a warning about the creation table must be skipped.
 
 6- Analysis the results of Challenge 4 
 
-In the folder ./challenge_04 you will find this files:
+In the folder ./challenge_04 you will find these files:
 
    - **01_other_analysis.md** . Describe all the answers related to the first question.
    - **02_etl_integration_to_bigquery.md** . Describe all the answers related to the second and third question.
+
+**Any question I will be available to solve and help you**   
+
