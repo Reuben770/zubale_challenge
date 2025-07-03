@@ -3,7 +3,7 @@
 1- Clone this repo in diretory previuse createad
 
 ```bash
-    git clone -b orign  https://github.com/Reuben770/zubale_challenge.git .
+    git clone -b main  https://github.com/Reuben770/zubale_challenge.git .
 ```
 
 2- Install all the requeriments.txt to execute some challenge, python 3.11.10 or higer is requeried
