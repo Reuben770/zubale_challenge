@@ -30,11 +30,11 @@ To answer this question, I'd like to present different scenarios:
 **Question 3**: What AI-based pipeline could you add to this pipeline? 
    - **Scope**: Based on the definition for AI-based I'm considering specific machine learning models to generate prediction about specific scenarios, ie: predict future demand.
    - **Main steps to integrate**:
-        a. **Data Source**: It's required to identify the sources for the scope.
-        b. **Data Preparation for ML (within BigQuery)**: It's probably required to create some aggregation to simplify the data, preprocess the data input to prepare for the model, next step. 
-        c. **Model Training (AI Component)**: To train the model it's required historical data, and the approach will be to use the native Bigquery ML we based on the scope.
-        d. **Model Evaluation (AI Component)**: After training, it's required to evaluate the model based in accuracy and other metrics.
-        e. **Prediction (AI Component)**: The trained and evaluated model is then used to generate predictions, and the result will be stored in Bigquery.
-        f. **Storing Predictions**: The result of the previous step will be stored in a new bigquery table.
-        h. **Serving/Visualization**: The data generated you can access by visualization tools like Looker Studio or will be available to integrate in other operational systems.
-        i. **Orchestration**: To orchestrate the end-to-end process you can use composer/airflow.
+    1. **Data Source**: It's required to identify the sources for the scope.
+    2. **Data Preparation for ML (within BigQuery)**: It's probably required to create some aggregation to simplify the data, preprocess the data input to prepare for the model, next step. 
+    3. **Model Training (AI Component)**: To train the model it's required historical data, and the approach will be to use the native Bigquery ML we based on the scope.
+    4. **Model Evaluation (AI Component)**: After training, it's required to evaluate the model based in accuracy and other metrics.
+    5. **Prediction (AI Component)**: The trained and evaluated model is then used to generate predictions, and the result will be stored in Bigquery.
+    6. **Storing Predictions**: The result of the previous step will be stored in a new bigquery table.
+    7. **Serving/Visualization**: The data generated you can access by visualization tools like Looker Studio or will be available to integrate in other operational systems.
+    8. **Orchestration**: To orchestrate the end-to-end process you can use composer/airflow.
