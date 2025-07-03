@@ -1,0 +1,6 @@
+kpi_name,order_created_date,product_name,category,total_quantity,total_price_usd,order_count
+KP1,'2024-12-06',,,29,6298.873421730021,10
+KP2,,Product_5,,20,4839.068009526661,8
+KP3,,,Shirts,50,20547.047407797854,16
+KP3,,,Jackets,30,4870.105763523624,10
+KP3,,,Pants,29,9335.418441702228,11
