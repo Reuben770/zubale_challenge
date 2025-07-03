@@ -103,5 +103,5 @@ In the folder ./challenge_04 you will find these files:
    - **01_other_analysis.md** . Describe all the answers related to the first question.
    - **02_etl_integration_to_bigquery.md** . Describe all the answers related to the second and third question.
 
-**Any question I will be available to solve and help you**   
-
+**Any question I will be available to solve and help you**
+**Regards Ruben**
