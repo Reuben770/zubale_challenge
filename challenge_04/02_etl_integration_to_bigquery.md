@@ -21,14 +21,14 @@ To answer this question, I'd like to present different scenarios:
         - **move_to_processed**. Move the file form clea are to raw area for historical reasons.
 
 2- Postgres Database is allocated in GCP (Cloud Sql):
-    - **Extract the Data (EL)**. This stage is not required because you can create an external conection in BigQuery to extract directery from external table and integrate in Bigquery.
-    - **Orquestation**. In this approach requires other DAG in composer because it doesn’t respond to the same architecture defined in the previus scenario. But the idea of these DAGs will be to simplify some tasks and change others, for example the stage for **load_staging** must be replaced by the native integration by external table in Bigquery.
+   - **Extract the Data (EL)**. This stage is not required because you can create an external conection in BigQuery to extract directery from external table and integrate in Bigquery.
+   - **Orquestation**. In this approach requires other DAG in composer because it doesn’t respond to the same architecture defined in the previus scenario. But the idea of these DAGs will be to simplify some tasks and change others, for example the stage for **load_staging** must be replaced by the native integration by external table in Bigquery.
 3- Postgres Database is allocated in GCP (Cloud Sql or Standalone):    
-    - **Extract the Data (E)**. Run and psql script or a job in the Cloud to extract the data from the database and load directly to GCS.
-    -**Load to Bigquery (LT)** and **Orchestration** will be the same as the first scenario.
+   - **Extract the Data (E)**. Run and psql script or a job in the Cloud to extract the data from the database and load directly to GCS.
+   - **Load to Bigquery (LT)** and **Orchestration** will be the same as the first scenario.
 
 **Question 3**: What AI-based pipeline could you add to this pipeline? 
-    - **Scope**: Based on the definition for AI-based I'm considering specific machine learning models to generate prediction about specific scenarios, ie: predict future demand.
+   - **Scope**: Based on the definition for AI-based I'm considering specific machine learning models to generate prediction about specific scenarios, ie: predict future demand.
     - **Main steps to integrate**:
         a. **Data Source**: It's required to identify the sources for the scope.
         b. **Data Preparation for ML (within BigQuery)**: It's probably required to create some aggregation to simplify the data, preprocess the data input to prepare for the model, next step. 
