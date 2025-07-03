@@ -29,7 +29,7 @@ To answer this question, I'd like to present different scenarios:
 
 **Question 3**: What AI-based pipeline could you add to this pipeline? 
    - **Scope**: Based on the definition for AI-based I'm considering specific machine learning models to generate prediction about specific scenarios, ie: predict future demand.
-    - **Main steps to integrate**:
+   - **Main steps to integrate**:
         a. **Data Source**: It's required to identify the sources for the scope.
         b. **Data Preparation for ML (within BigQuery)**: It's probably required to create some aggregation to simplify the data, preprocess the data input to prepare for the model, next step. 
         c. **Model Training (AI Component)**: To train the model it's required historical data, and the approach will be to use the native Bigquery ML we based on the scope.
